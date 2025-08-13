@@ -1,45 +1,16 @@
-
 <html>
+<head>Webiste</head>
+<title>Webiste</title>
+<body>
 
-<style>
+<div>
+<iframe src="https://pluses--infra.sandbox.my.site.com/Webinar/s" 
+        width="100%" 
+        height="800px" 
+        frameborder="0" 
+        scrolling="auto">
+</iframe>
+</div>
 
-  a {
-    color: orange;
-  }
-
-</style>
-
-<script src="https://pluses--infra.sandbox.my.site.com/Webinar/lightning/lightning.out.js"></script>
-
-<div data-lightning-out="true"></div>
-
-  <script>
-
-    const appName = 'c:eventRegistrationApp';
-    const componentName = 'c:EventRegistrationProcessFlow';
-    const lightningEndpoint = 'https://pluses--infra.sandbox.lightning.force.com/lightning/page/home';
-    const targetElement = document.querySelector("[data-lightning-out]");
-    const componentAttributes = {
-
-    };
-
-    $Lightning.use(
-            appName,
-            function (){
-              $Lightning.createComponent(
-                      componentName,
-                      componentAttributes,
-                      targetElement,
-                      function (cmp){
-                        console.log('lightning component created');
-                      }
-              );
-            },
-            lightningEndpoint
-    );
-
-
-  </script>
-
-
+</body>
 </html>
